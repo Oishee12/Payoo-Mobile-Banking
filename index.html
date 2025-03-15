@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo Mobile Banking</title>
+    <!-- daisyUI setup -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- tailwind setup -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
+    <main class="flex justify-center">
+        <div>
+            <div class="mockup-phone">
+                <div class="h-[600px] w-[350px] bg-pink-100 text-black mockup-phone-display grid place-content-center">
+                    <div class="hero bg-base-200 min-h-screen">
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+                            <h1 class="text-5xl font-bold">Login now!</h1>
+                            <p class="py-6">
+                              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                              quasi. In deleniti eaque aut repudiandae et a id nisi.
+                            </p>
+                          </div> 
+                          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <div class="card-body">
+                              <fieldset class="fieldset">
+                                <label class="font-bold text-base fieldset-label">Mobile Number</label>
+                                <input id="mobile-number" type="text" class="input" placeholder="Enter your number" />
+                                <label class="font-bold text-base fieldset-label">4 digit pin</label>
+                                <input id="pin-number" type="text" class="input" placeholder="Enter 4 digit pin" />
+                                <button id="login-button" class="btn btn-neutral mt-4">Login</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+        </div>
+    </main>
+    <script src="js folder/login.js"></script>
 </body>
+
 </html>
