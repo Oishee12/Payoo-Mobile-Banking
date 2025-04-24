@@ -17,7 +17,7 @@
             <div class="h-[600px] w-[350px] bg-pink-100 text-black mockup-phone-display">
                 <div class="card bg-base-100 w-1/2 max-w-sm shrink-0 mt-10 p-4 mx-auto">
                     <div class="">
-                        <div class="text-center text-2xl font-bold">9400</div>
+                        <div id="current-balance" class="text-center text-2xl font-bold">9400</div>
                     <div class="text-center">Available balance</div>
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                   </div>
 
                   <div class="flex place-content-around">
-                    <div><button class="btn btn-lg">Add Money</button></div>
+                    <div><button id="" class="btn btn-lg">Add Money</button></div>
                     <div><button class="btn btn-lg">Cash Out</button></div>
                   </div>
 
@@ -35,14 +35,26 @@
                     <div class="divider"></div>
                   </div>
 
+                  <div class="card bg-base-100 w-80 max-w-sm shrink-0 shadow-2xl mx-auto hidden">
+                    <div class="card-body">
+                      <fieldset class="fieldset">
+                        <label class="font-bold text-base fieldset-label">Amount</label>
+                        <input id="add-amount" type="text" class="input" placeholder="Enter your amount" />
+                        <label class="font-bold text-base fieldset-label">Pin</label>
+                        <input id="pin-number" type="text" class="input" placeholder="Enter your pin" />
+                        <button id="add-money" class="btn btn-neutral mt-4">Add Money</button>
+                      </fieldset>
+                    </div>
+                  </div>
+
                   <div class="card bg-base-100 w-80 max-w-sm shrink-0 shadow-2xl mx-auto">
                     <div class="card-body">
                       <fieldset class="fieldset">
                         <label class="font-bold text-base fieldset-label">Amount</label>
-                        <input id="mobile-number" type="text" class="input" placeholder="Enter your amount" />
+                        <input id="add-amount" type="text" class="input" placeholder="Enter your amount" />
                         <label class="font-bold text-base fieldset-label">Pin</label>
                         <input id="pin-number" type="text" class="input" placeholder="Enter your pin" />
-                        <button id="login-button" class="btn btn-neutral mt-4">Add Money</button>
+                        <button id="add-money" class="btn btn-neutral mt-4">Cash Out</button>
                       </fieldset>
                     </div>
                   </div>
@@ -50,5 +62,6 @@
           </div>
        </div>
     </main>
+    <script src="./js folder/home.js"></script>
 </body>
 </html>
