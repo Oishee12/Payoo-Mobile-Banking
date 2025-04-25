@@ -27,15 +27,15 @@
                   </div>
 
                   <div class="flex place-content-around">
-                    <div><button id="" class="btn btn-lg">Add Money</button></div>
-                    <div><button class="btn btn-lg">Cash Out</button></div>
+                    <div><button id="addMoney-id" class="btn btn-lg">Add Money</button></div>
+                    <div><button id="cashout-id" class="btn btn-lg">Cash Out</button></div>
                   </div>
 
                   <div class="flex w-full flex-col">
                     <div class="divider"></div>
                   </div>
 
-                  <div class="card bg-base-100 w-80 max-w-sm shrink-0 shadow-2xl mx-auto hidden">
+                  <div id="add-money-form" class="card bg-base-100 w-80 max-w-sm shrink-0 shadow-2xl mx-auto ">
                     <div class="card-body">
                       <fieldset class="fieldset">
                         <label class="font-bold text-base fieldset-label">Amount</label>
@@ -47,14 +47,14 @@
                     </div>
                   </div>
 
-                  <div class="card bg-base-100 w-80 max-w-sm shrink-0 shadow-2xl mx-auto">
+                  <div id="cash-out-form" class="card bg-base-100 w-80 max-w-sm shrink-0 shadow-2xl mx-auto hidden">
                     <div class="card-body">
                       <fieldset class="fieldset">
                         <label class="font-bold text-base fieldset-label">Amount</label>
-                        <input id="add-amount" type="text" class="input" placeholder="Enter your amount" />
+                        <input id="cash-out-amount" type="text" class="input" placeholder="Enter your amount" />
                         <label class="font-bold text-base fieldset-label">Pin</label>
-                        <input id="pin-number" type="text" class="input" placeholder="Enter your pin" />
-                        <button id="add-money" class="btn btn-neutral mt-4">Cash Out</button>
+                        <input id="cashout-pin" type="text" class="input" placeholder="Enter your pin" />
+                        <button id="cash-out" class="btn btn-neutral mt-4">Cash Out</button>
                       </fieldset>
                     </div>
                   </div>
@@ -63,5 +63,7 @@
        </div>
     </main>
     <script src="./js folder/home.js"></script>
+    <script src="./js folder/cashout.js"></script>
+    <script src="./js folder/features.js"></script>
 </body>
 </html>
